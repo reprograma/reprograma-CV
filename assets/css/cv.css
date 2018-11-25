@@ -9,6 +9,7 @@ h2, h3, span, #intro address, #intro address a{
 
 h2 {
     font-weight: normal;
+    margin: 0;
 }
 
 p {
@@ -22,6 +23,8 @@ address a {
 
 .background-DEBBDD {
     background-color: #DEBBDD;
+    width: 100%;
+    padding: 0.2rem 1rem;
 }
 
 /* #region header */
@@ -51,15 +54,43 @@ header {
 
 /* #region main */
 main {   
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:"intro intro"
-                        "about about"
-                        "works studies"
-                        "interests skills";
     margin: 5vh 5vw;
+}
+.work, .study, .interest, .skill {
+    max-width: 100%;
+}
+.section-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+    padding: 2vh 0;
+}
+.section-icon img{
+    max-height: 10vh;
+}
+@media(min-width: 768px){
+    main {   
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:"intro intro"
+        "about about"
+        "works studies"
+        "interests skills";
+        grid-column-gap: 5vw;
+        grid-row-gap: 5vh;
+        margin: 5vh 5vw;
+    }
+    .section-icon {
+        padding: 0 0 5vh 0;
+        min-height: 15vh;
+    }
+    .section-icon img{
+        max-height: 15vh;
+    }
 }
 
 /* #region intro */
@@ -128,76 +159,80 @@ main {
 
 /* #region about */
 #about {
-    /* background-color: silver; */
     -ms-grid-row: 2; 
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: about;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    display: none;
 }
 /* #endregion */
 
 /* #region works */
 #works {
-    /* background-color: silver; */
     -ms-grid-row: 3; 
     -ms-grid-column: 1;
     grid-area: works;
-    /* display: flex;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center; */
-    display: none;
+    align-items: flex-start;
 }
 /* #endregion */
 
 /* #region studies */
 #studies {
-    /* background-color: silver; */
     -ms-grid-row: 3; 
     -ms-grid-column: 2;
     grid-area: studies;
-    /* display: flex;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center; */
-    display: none;
+    align-items: flex-start;
 }
 /* #endregion */
 
 /* #region interests */
 #interests {
-    /* background-color: silver; */
     -ms-grid-row: 4; 
     -ms-grid-column: 1;
     grid-area: interests;
-    /* display: flex;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center; */
-    display: none;
+    align-items: flex-start;
 }
 /* #endregion */
 
 /* #region skills */
 #skills {
-    /* background-color: silver; */
     -ms-grid-row: 4; 
     -ms-grid-column: 2;
     grid-area: skills;
-    /* display: flex;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center; */
-    display: none;
+    align-items: flex-start;
+}
+#skills-list {
+    background-color: #EAD6E9;
+    min-height: calc(100% - 20vh);
+    width: 100%;
+    padding: 1vh 2vw;
+}
+#skills h2{
+    font-weight: bold;
+    margin-bottom: 5vh;
 }
 .points, .skill {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .point {
     border: 1px solid #7E459B;
     border-radius: 50%;
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-left: 0.5rem;
 }
 /* #endregion */
 
