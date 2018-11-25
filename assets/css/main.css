@@ -17,12 +17,12 @@ a {
 /* #region footer */
 footer {
     background-color: #7E459B;
-    height: 20vh;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5vh; 
+    margin-top: 10vh; 
 }
 address ul {
     padding: 0;
@@ -35,6 +35,13 @@ address ul {
 footer a {
     text-transform: uppercase;
     font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer img {
+    height: 2rem;
+    margin-right: 0.2rem;
 }
 footer p {
     color: #E6CCE6;

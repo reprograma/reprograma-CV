@@ -9,49 +9,91 @@ h3, p {
 /* #region header */
 header {
     color: white;
-    background: #7D4899;
-    height: 40vh;
+    background-image: url(../img/bg-foto-chaves.png);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 45vh;
     padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-.braces {
-    display: none;
+    align-items: flex-start;
+    flex: 0 1 85vw;
 }
 h1 {
     font-size: 3.5rem;
     margin: 0;
+    
 }
 h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: normal;
+    max-width: 100%;
 }
-@media (min-width: 768px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+@media(min-width: 768px){
     .header-text {
-        align-items: flex-start;
+        max-width: 60vw;
     }
-    .braces {
-        display: inherit;
-        font-size: 37vh;
+}
+@media(min-width: 1440px){
+    header {
+        height: 75vh;
     }
     h1 {
-        font-size: 5.5rem;
+        font-size: 6.5rem;
+    }
+    h2 {
+        font-size: 3rem;
     }
 }
 /* #endregion */
 
-
-
+/* #region main */
+main header {
+    background-image: none;
+    flex-direction: column;
+    text-align: center;
+}
+main header p {
+    width: 80vw;
+}
+h3 {
+    font-size: 2.7rem;
+    margin: 0;
+}
+main header img {
+    height: 3rem;
+}
+@media(min-width: 1024px){
+    main header {
+        min-height: 25vh;
+    }
+    main header p {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    main header img {
+        height: 4.3rem;
+    }
+}
+@media(min-width: 1440px){
+    main header p {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 4rem;
+    }
+    main header img {
+        height: 4.3rem;
+    }
+}
 /* #region students */
 .students {
     max-width: 940px;
@@ -129,6 +171,9 @@ h2 {
 .button:hover {
     background: #DDBCDC;
     text-decoration: none;
+    color: #7D4899;
 }
+
+/* #endregion */
 
 /* #endregion */
