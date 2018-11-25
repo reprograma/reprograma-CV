@@ -1,0 +1,207 @@
+h1 {
+    color: #7D4899;
+    font-size: 3rem;
+}
+
+h2, h3, span, #intro address, #intro address a{
+    color: #3A144D;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+p {
+    color: #7E459B;
+
+}
+
+address a {
+    color: white;
+}
+
+.background-DEBBDD {
+    background-color: #DEBBDD;
+}
+
+/* #region header */
+header {
+    background-color: #7D4899;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 auto;
+    padding: 1vh;
+}
+.arrow-back {
+    position: absolute;
+    left: 1.5%;
+    top: 2.5%;
+}
+.arrow-back img {
+    max-height: 5vh;
+    max-width: 10vw;
+}
+.header-logo {
+    max-height: 8vh;
+    max-width: 60vw;
+}
+/* #endregion */
+
+/* #region main */
+main {   
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"intro intro"
+                        "about about"
+                        "works studies"
+                        "interests skills";
+    margin: 5vh 5vw;
+}
+
+/* #region intro */
+#intro {
+    -ms-grid-row: 1; 
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: intro;
+}
+.profile-img {
+    border-radius: 50%;
+    max-width: 80vw;
+}
+#intro address {
+    margin: auto;
+    font-size: 1rem;
+    min-width: 18vw;
+}
+#intro address ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#intro address li{
+}
+#intro address img{
+    max-height: 2rem;
+    margin-right: 0.2rem;
+}
+@media(min-width:768px) {
+    #intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "img address"
+                             "info info";
+    }
+    .profile-img {
+        grid-area: img;
+        max-width: 30vw;
+    }
+    #intro > div {
+        grid-area: info;
+    }
+    #intro address {
+        grid-area: address;
+    }
+}
+@media(min-width:1024px) {
+    #intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .profile-img {
+        max-width: 20vw;
+    }
+    #intro > div {
+        margin: 0 2vw;
+        max-width: 50vw;
+    }
+}
+/* #endregion */
+
+/* #region about */
+#about {
+    /* background-color: silver; */
+    -ms-grid-row: 2; 
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: about;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: none;
+}
+/* #endregion */
+
+/* #region works */
+#works {
+    /* background-color: silver; */
+    -ms-grid-row: 3; 
+    -ms-grid-column: 1;
+    grid-area: works;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: none;
+}
+/* #endregion */
+
+/* #region studies */
+#studies {
+    /* background-color: silver; */
+    -ms-grid-row: 3; 
+    -ms-grid-column: 2;
+    grid-area: studies;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: none;
+}
+/* #endregion */
+
+/* #region interests */
+#interests {
+    /* background-color: silver; */
+    -ms-grid-row: 4; 
+    -ms-grid-column: 1;
+    grid-area: interests;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: none;
+}
+/* #endregion */
+
+/* #region skills */
+#skills {
+    /* background-color: silver; */
+    -ms-grid-row: 4; 
+    -ms-grid-column: 2;
+    grid-area: skills;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: none;
+}
+.points, .skill {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.point {
+    border: 1px solid #7E459B;
+    border-radius: 50%;
+}
+/* #endregion */
+
+/* #endregion */
+
+
+

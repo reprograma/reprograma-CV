@@ -24,7 +24,7 @@ footer {
     align-items: center;
     margin-top: 10vh; 
 }
-address ul {
+footer address ul {
     padding: 0;
     list-style: none;
     display: flex;
@@ -53,7 +53,7 @@ footer p {
     footer {
         align-items: stretch;
     }
-    address ul {
+    footer address ul {
         flex-direction: inherit;
     }
 }
