@@ -234,6 +234,9 @@ main {
     width: 0.5rem;
     margin-left: 0.5rem;
 }
+.has-point {
+    background-color: #7E459B;
+}
 /* #endregion */
 
 /* #endregion */
