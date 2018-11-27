@@ -127,8 +127,7 @@ main {
     #intro {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "img address"
-                             "info info";
+        grid-template-areas: "info address";
     }
     .profile-img {
         grid-area: img;
@@ -151,7 +150,6 @@ main {
         max-width: 20vw;
     }
     #intro > div {
-        margin: 0 2vw;
         max-width: 50vw;
     }
 }
