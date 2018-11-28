@@ -171,7 +171,6 @@ main {
     grid-area: works;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
 }
 /* #endregion */
@@ -183,7 +182,6 @@ main {
     grid-area: studies;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
 }
 /* #endregion */
@@ -195,7 +193,6 @@ main {
     grid-area: interests;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
 }
 /* #endregion */
@@ -207,7 +204,6 @@ main {
     grid-area: skills;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
 }
 #skills-list {
