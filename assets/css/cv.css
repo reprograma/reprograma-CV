@@ -12,6 +12,11 @@ h2 {
     margin: 0;
 }
 
+h5 {
+    color: rgba(58, 20, 77, 0.8);
+    font-weight: lighter;
+}
+
 p {
     color: #7E459B;
 
