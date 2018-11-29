@@ -12,6 +12,16 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    margin-bottom: 4px;
+}
+
+h5 {
+    font-weight: lighter;
+    color: #444;
+    margin-top: 0;
+}
+
 p {
     color: #7E459B;
 
