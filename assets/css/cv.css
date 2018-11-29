@@ -12,6 +12,16 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    margin-bottom: 4px;
+}
+
+h5 {
+    font-weight: lighter;
+    color: #444;
+    margin-top: 0;
+}
+
 p {
     color: #7E459B;
 
@@ -208,7 +218,7 @@ main {
 }
 #skills-list {
     background-color: #EAD6E9;
-    min-height: calc(100% - 20vh);
+    min-height: calc(50% - 20vh);
     width: 100%;
     padding: 1vh 2vw;
 }
