@@ -208,7 +208,7 @@ main {
 }
 #skills-list {
     background-color: #EAD6E9;
-    min-height: calc(100% - 20vh);
+    min-height: calc(50% - 20vh);
     width: 100%;
     padding: 1vh 2vw;
 }
