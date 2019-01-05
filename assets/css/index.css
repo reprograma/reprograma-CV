@@ -141,11 +141,10 @@ main header img {
 }
 
 .name {
-    background-color: #DDBCDC;
     color: #7E459B;
     text-align: center;
     font-weight: bold;
-    margin: 0.5rem 0;
+    margin: 0.7rem 0;
     padding: 0.5rem;
 }
 
